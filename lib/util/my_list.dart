@@ -13,7 +13,7 @@ class MyList extends StatelessWidget {
       children: [
         Container(
           padding: EdgeInsets.all(12),
-          height: 100,
+          height: 80,
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(12),

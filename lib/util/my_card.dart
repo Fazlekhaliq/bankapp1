@@ -21,18 +21,29 @@ class MyCard extends StatelessWidget {
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const SizedBox(height: 10,),
-            const Text("Balance",
-              style: TextStyle(
-                color: Colors.white,
-              ),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text("Balance",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                  ),
+                ),
+                Image.asset("asset/6.png",height: 50,),
+
+              ],
             ),
+
             const SizedBox(height: 10,),
              Text('\$' + CardBalance.toString(),
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 24,
+                fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 30,),
