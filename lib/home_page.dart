@@ -16,6 +16,28 @@ class _HomePageState extends State<HomePage> {
     final _controller=PageController();
     return Scaffold(
       backgroundColor: Colors.grey.shade300,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+
+        },
+        backgroundColor: Colors.pink,
+        child: Icon(Icons.monetization_on_outlined),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      bottomNavigationBar: BottomAppBar(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            IconButton(onPressed: (){},
+                icon: Icon(Icons.home_filled),
+            ),
+            SizedBox(width: 25,),
+            IconButton(onPressed: (){},
+              icon: Icon(Icons.settings),
+            ),
+          ],
+        ),
+      ),
       body: SafeArea(
         child: Column(
           children: [
